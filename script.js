@@ -1,4 +1,4 @@
-var socket = io("https://localhost:4000/logs");
+var socket = io("ws://localhost:4000");
 
 socket.on("update-logs",function(data){
     console.log(data);
