@@ -35,7 +35,7 @@ app.get("/logs",(req,res)=>{
     // So we will be having multiple clients If we have a new connection then we can push the datastore in FileWatcher class which
     // always stores the last 10 lines of the logs.txt file
     // else we will send updated logs only. 
-    res.sendFile("logs.txt",options );
+    res.sendFile("index.html",options );
 
 })
 
